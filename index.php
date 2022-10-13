@@ -5,3 +5,9 @@
         ESERCIZIO SNACK 1
     </a>
 </h2>
+
+<h2>
+    <a href="./snacks/snack2.php">
+        ESERCIZIO SNACK 2
+    </a>
+</h2>
