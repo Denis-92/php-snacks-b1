@@ -25,8 +25,6 @@
 
 <?php
 
-$name = "";
-
 $name = $_GET["name"];
 $mail = $_GET["mail"];
 $age = $_GET["age"];
@@ -38,7 +36,11 @@ $age = $_GET["age"];
 //     echo "Accesso negato";
 // }
 
-if(strlen($name > 3)) {
+echo "<p>" . $name . "</p>";
+echo "<p>" . $mail . "</p>";
+echo "<p>" . $age . "</p>";
+
+if(strlen($name) > 3 ) {
     echo "Accesso riuscito NOME";
 } else {
     echo "Accesso negato NOME";
