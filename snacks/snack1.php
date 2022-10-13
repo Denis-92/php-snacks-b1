@@ -48,8 +48,12 @@
         ]
     ];
 
-echo $partiteBasket[0]['squadraCasa'] . " - ";
-echo $partiteBasket[0]['squadraOspite'] . " | ";
-echo $partiteBasket[0]['puntiCasa'] . "-";
-echo $partiteBasket[0]['puntiOspite'];
+for ($i = 0; $i < count($partiteBasket); $i++){
+echo "<p>";
+echo $partiteBasket[$i]['squadraCasa'] . " - ";
+echo $partiteBasket[$i]['squadraOspite'] . " | ";
+echo $partiteBasket[$i]['puntiCasa'] . "-";
+echo $partiteBasket[$i]['puntiOspite'] . "</p>";
+}
+
  ?>
