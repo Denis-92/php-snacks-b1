@@ -17,3 +17,46 @@
 
     Qui l’array di esempio: https://www.codepile.net/pile/R2K5d68z
 -->
+
+<?php
+
+$forum = [
+
+    "01-01-2020" => [
+        "utente" => "pippo",
+        "messaggio" => "lorem ipsum",
+        "ora" => "12:30"
+    ],
+
+    "02-01-2020" => [
+        "utente" => "paperino",
+        "messaggio" => "sit amet",
+        "ora" => "07:24"
+    ],
+
+    "04-01-2020" => [
+        "utente" => "qui",
+        "messaggio" => "test 1 2 3",
+        "ora" => "11:11"
+    ],
+    [
+        "utente" => "quo",
+        "messaggio" => "3 2 1 via",
+        "ora" => "20:08"
+    ],
+
+    "10-02-2020" => [
+        "utente" => "tom",
+        "messaggio" => "hello world",
+        "ora" => "18:00"
+    ],
+];
+
+$condition = count($forum);
+
+// for ( $i = 0; $i < $condition; $i++ ) {
+//     echo $forum[$i];
+// }
+
+
+?>
