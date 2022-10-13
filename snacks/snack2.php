@@ -25,5 +25,17 @@
 
 <?php
 
+$name = $_GET["name"];
+$mail = $_GET["mail"];
+$age = $_GET["age"];
+
+// SEBBENE TROVATO IN DOCUMENTAZIONE --str_contains-- SEMBRA NON ESISTENTE NEL LINGUAGGIO UTILIZZATO
+// if (str_contains($mail, '@')) {
+//     echo "Accesso riuscito";
+// } else {
+//     echo "Accesso negato";
+// }
+
+
 
 ?>
