@@ -16,34 +16,60 @@
     Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 -->
 
-<form method="get">
+<!-- <form method="get">
     <input type="text" name="name" placeholder="Nome">
     <input type="email" name="mail" placeholder="Email">
     <input type="number" name="age" placeholder="Età">
     <button type="submit">Invia</button>
-</form>
+</form> -->
 
 <?php
+
+$name = "";
+$mail = "";
+$age = "";
+
+if ( isset( $_GET["name"] ) ) {
+    $name = $_GET["name"];
+}
 
 $name = $_GET["name"];
 $mail = $_GET["mail"];
 $age = $_GET["age"];
 
-// SEBBENE TROVATO IN DOCUMENTAZIONE --str_contains-- SEMBRA NON ESISTENTE NEL LINGUAGGIO UTILIZZATO
-// if (str_contains($mail, '@')) {
-//     echo "Accesso riuscito";
-// } else {
-//     echo "Accesso negato";
-// }
-
 echo "<p>" . $name . "</p>";
 echo "<p>" . $mail . "</p>";
 echo "<p>" . $age . "</p>";
 
-if(strlen($name) > 3 ) {
-    echo "Accesso riuscito NOME";
+$checkName = strlen( $name ) > 3;
+
+$checkMailAt = strpos( $mail, "@" );
+$checkMailDot = strpos( $mail, "." );
+
+$checkNumber = is_numeric( $age );
+
+if( $checkName ) {
+    echo "<p> Nome OK </p>";
 } else {
-    echo "Accesso negato NOME";
+    echo "<p> Nome non valido </p>";
+}
+
+if ( $checkMailAt && $checkMailDot ) {
+    echo "<p> Mail OK </p>";
+} else {
+    echo "<p> Mail non valida </p>";
+}
+
+if ( $checkNumber ) {
+    echo "<p> Numero OK </p>";
+} else {
+    echo "<p> Numero non valido </p>";
+}
+
+if ( $checkName && $checkMailAt && $checkMailDot && $checkNumber ) {
+    echo "<p> Accesso riuscito </p>";
+} else {
+    echo "<p> Accesso negato </p>";
 }
 
 
