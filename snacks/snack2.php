@@ -16,6 +16,13 @@
     Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 -->
 
+<form method="get">
+    <input type="text" name="name" placeholder="Nome">
+    <input type="email" name="mail" placeholder="Email">
+    <input type="number" name="age" placeholder="Età">
+    <button type="submit">Invia</button>
+</form>
+
 <?php
 
 
