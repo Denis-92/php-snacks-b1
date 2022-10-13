@@ -17,3 +17,15 @@
         ESERCIZIO SNACK 3
     </a>
 </h2>
+
+<h2>
+    <a href="./snacks/snack4.php">
+        ESERCIZIO SNACK 4
+    </a>
+</h2>
+
+<h2>
+    <a href="./snacks/snack5.php">
+        ESERCIZIO SNACK 5
+    </a>
+</h2>
