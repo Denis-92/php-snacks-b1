@@ -14,11 +14,11 @@
 
     Stampiamo a schermo tutte le partite con questo schema.
     Olimpia Milano - Cantù | 55-60
- -->
+-->
 
- <?php
+<?php
 
- $partiteBasket = [
+    $partiteBasket = [
         $partita_venerdi = [
             'squadraCasa' => 'Milano',
             'squadraOspite' => 'Roma',
@@ -48,12 +48,12 @@
         ]
     ];
 
-for ($i = 0; $i < count($partiteBasket); $i++){
-echo "<p>";
-echo $partiteBasket[$i]['squadraCasa'] . " - ";
-echo $partiteBasket[$i]['squadraOspite'] . " | ";
-echo $partiteBasket[$i]['puntiCasa'] . "-";
-echo $partiteBasket[$i]['puntiOspite'] . "</p>";
-}
+    for ($i = 0; $i < count($partiteBasket); $i++){
+    echo "<p>";
+    echo $partiteBasket[$i]['squadraCasa'] . " - ";
+    echo $partiteBasket[$i]['squadraOspite'] . " | ";
+    echo $partiteBasket[$i]['puntiCasa'] . "-";
+    echo $partiteBasket[$i]['puntiOspite'] . "</p>";
+    };
 
- ?>
+?>
