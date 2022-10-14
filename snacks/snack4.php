@@ -19,7 +19,9 @@ $lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illu
 
 $loremBreakLine = explode ( "." , $lorem );
 
-var_dump ( $loremBreakLine );
+for ( $i = 0; $i < count($loremBreakLine); $i++ ) {
+    echo "<p>" . $loremBreakLine[$i] . ".</p>";
+}
 
 ?>
 
