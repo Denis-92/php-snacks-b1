@@ -19,7 +19,7 @@ $lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illu
 
 $loremBreakLine = explode ( "." , $lorem );
 
-for ( $i = 0; $i < count($loremBreakLine); $i++ ) {
+for ( $i = 0; $i < ( count($loremBreakLine) - 1 ); $i++ ) {
     echo "<p>" . $loremBreakLine[$i] . ".</p>";
 }
 
