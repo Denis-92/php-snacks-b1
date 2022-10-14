@@ -12,3 +12,14 @@
     Prendere il paragrafo e suddividerlo in tanti paragrafi.
     Ogni punto un nuovo paragrafo.
 -->
+
+<?php
+
+$lorem = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur illum perspiciatis voluptas amet! Repudiandae nemo maiores facere accusantium tempora? Maiores quis natus fuga necessitatibus, nobis unde corrupti quod dolore totam.";
+
+$loremBreakLine = explode ( "." , $lorem );
+
+var_dump ( $loremBreakLine );
+
+?>
+
