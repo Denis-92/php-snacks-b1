@@ -52,11 +52,14 @@ $forum = [
     ],
 ];
 
-$condition = count($forum);
+$giornoMessaggi = array_keys($forum);
 
-// for ( $i = 0; $i < $condition; $i++ ) {
-//     echo $forum[$i];
-// }
+$conditionKeys = count($giornoMessaggi);
+
+for ( $i = 0; $i < $conditionKeys; $i++ ) {
+    $oggi = $giornoMessaggi[$i];
+    echo '<p>' . $oggi . '</p>';
+}
 
 
 ?>
